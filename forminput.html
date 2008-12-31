@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Jasa</title>
+    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond&family=Enriqueta:wght@600&family=Faster+One&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="badan-kepala">
+        
+        <header>
+            <h2>Sewa Mobil</h2>
+            <p></p>
+        </header>
+        <div class="running-text">
+          <marquee>Bulan Oktober Ada Diskon Setiap Harinya!</marquee>
+        </div>
+ 
+
+        <div class="produk">
+            <div class="kotak">
+                <h3>Toyota Raize</h3>
+                <img src="https://www.acc.co.id/uploads/News/Automotive/Images/2019/11/Toyota-Raize-01.jpg">
+                <p>Rp.3.000.000</p>
+            </div>
+        </div>
+
+        <div class="produk">
+            <div class="kotak">
+                <h3>Toyota Alphard</h3>
+                <img src="https://mmc.tirto.id/image/otf/500x0/2018/03/01/luxury-mpv-toyota--new-alphard-toyota.astra.co.id-2_ratio-16x9.jpg">
+                <p>Rp.8.500.000</p>
+            </div>
+        </div>
+
+        <div class="produk">
+            <div class="kotak">
+                <h3>Toyota Rush</h3>
+                <img src="https://s.garasi.id/r384x216/q99/car_info_landing/23ea78b8-1637-4c93-a002-cd69f43b8653.png">
+                <p>Rp.2.200.000</p>
+            </div>
+        </div>
+
+        <div class="produk">
+            <div class="kotak">
+                <h3>Toyota Venza</h3>
+                <img src="https://www.caroline.id/berita/wp-content/uploads/2020/05/Mobil-SUV-Toyota-Venza-siap-dijual-lagi.-Yuk-lihat-keunggulannya.jpg">
+                <p>Rp.5.700.000</p>
+            </div>
+        </div>
+
+        <div class="menu-kanan">
+            <div class="kotak">
+                <h3>Formulir Pembayaran</h3>
+                  <form name="formpembayaran">
+                      <div class="form-group">
+                          <div class="row">
+                      
+                              <table class="table table-borderless">
+
+                                <tr>
+                                  <td>Nama Costumer :</td>
+                                  <td><input class="form-control" type="text" name="nama1" placeholder="Masukkan Nama Anda"></td>
+                                </tr>
+
+                                  <tr>
+                                  <td>Kode Sewa :</td>
+                                  <td>
+                                  <select name="kode1" class="form-control" onclick="pencet()">
+                                    <option></option>
+                                    <option selected>Pilih Kode</option>
+                                    <option value="f1">FR001</option>
+                                    <option value="f2">FR002</option>
+                                    <option value="f3">FR003</option>
+                                    <option value="f4">FR004</option>
+                                  </select>
+                                  </td>
+                                  </tr>
+            
+            
+                                  <tr>
+                                  <td>Jenis Mobil :</td>
+                                  <td><input class="form-control" type="text" name="jenis1" placeholder=""></td>
+                                  </tr>
+            
+                                  <tr>
+                                    <td>Harga :</td>
+                                    <td><input class="form-control" type="text" name="harga1"></td>
+                                  </tr>
+            
+                                  <tr>
+                                    <td>Jumlah Sewa:</td>
+                                    <td><input class="form-control" type="number" name="jumlah1" placeholder="Masukkan Angka"></td>
+                                  </tr>
+            
+                                  <td colspan="2">
+                                    <input type="button" class="form-control btn-outline-secondary btn-sm" value="Konfirmasi" onclick="pencet1()">
+                                  </td>
+            
+                                  <tr>
+                                    <td>Total Harga:</td>
+                                    <td><input class="form-control" type="text" name="total1"></td>
+                                  </tr>
+            
+                                  <tr>
+                                    <td> Pembayaran :</td>
+                                    <td><input class="form-control" type="text" name="pembayaran1" placeholder="Masukkan Nominal Uang Anda"></td>
+                                  </tr>
+            
+                                  <td colspan="2">
+                                  <input class="form-control btn-outline-secondary btn-sm" type="button" value="Input" onclick="pencet2()">
+                                  </td>
+            
+                                  <tr>
+                                    <td><label>Kembalian :</label></td>
+                                    <td><input class="form-control" type="text" name="kembalian1"></td>
+                                  </tr>
+            
+                                  <tr>
+                                  <td colspan="2">
+                                  <div class="row">
+                                  <div class="col-sm">
+                                    <input class="form-control btn-outline-success btn-sm" type="button" value="Bayar" onclick="simpan()"><br>
+                                  </div>
+                                  <div class="col-sm">
+                                    <input class="form-control btn-outline-danger btn-sm" type="reset" value="Batal">
+                                  </div>
+                                  </div>
+                                  </td>
+                                  </tr>
+                              </table>
+                      </div>
+                  </div>
+            </div>
+        </div>
+
+                <div class="menu-kanan">
+                    <div class="kotak">
+                        <h3>Hasil Transaksi</h3>
+                                
+                                        <table class="table table-borderless">
+                                            <tr>
+                                                <td>Nama Costumer</td>
+                                                <td><input class="form-control" type="text" name="namabaru"></td>
+                                            </tr>
+      
+                                            <tr>
+                                                <td>Jenis Mobil</td>
+                                                <td><output class="form-control" type="text" name="jenisbaru"></td>
+                                            </tr>
+      
+                                            <tr>
+                                                <td>Jumlah Sewa</td>
+                                                <td><output class="form-control" type="text" name="jumlahbaru"></td>
+                                            </tr>
+      
+                                            <tr>
+                                                <td>Total Harga</td>
+                                                <td><output class="form-control" type="text" name="totalbaru"></td>
+                                            </tr>
+      
+                                            <tr>
+                                                <td>Pembayaran</td>
+                                                <td><output class="form-control" type="text" name="bayarbaru"></td>
+                                            </tr>
+      
+                                            <tr>
+                                                <td>Kembalian</td>
+                                                <td><output class="form-control" type="text" name="kembalianbaru"></td>
+                                            </tr>
+                                        </table>
+                                        <footer>
+
+                                      </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+ 
+
+        <footer>
+            ©2020 || Faradina Aiziz Wibisono
+        </footer>
+
+        </div>
+
+        <script>
+          function pencet() {
+              var kode = (document.formpembayaran.kode1.value);
+              var jenis = "";
+              var harga = 0.0;
+
+              if (kode == "f1") {
+                  jenis = "Toyota Raize";
+                  harga = 3000000;
+              } else if (kode == "f2") {
+                  jenis = "Toyota Alphard";
+                  harga = 8500000;
+              } else if (kode == "f3") {
+                  jenis = "Toyota Rush";
+                  harga = 2200000;
+              } else if (kode == "f4") {
+                  jenis = "Toyota Venza";
+                  harga = 5700000;
+              } else {
+                  jenis = "";
+                  harga = 0;
+              }
+
+              document.formpembayaran.jenis1.value = jenis;
+              document.formpembayaran.harga1.value = eval(harga);
+          }
+
+          function pencet1() {
+              var harga = (document.formpembayaran.harga1.value);
+              var jumlah = (document.formpembayaran.jumlah1.value);
+              var total = 0.0;
+
+              total = harga * jumlah;
+
+              var hargadiskon= total;
+              var diskon1= 30;
+              var diskon2 =100;
+              var jumlahdiskon = total/diskon2*diskon1;
+              var hargadiskon = hargadiskon-jumlahdiskon
+
+              total=hargadiskon
+
+              document.formpembayaran.total1.value = eval(total);
+          }
+
+          function pencet2() {
+              var total = (document.formpembayaran.total1.value);
+              var jumlahbayar = (document.formpembayaran.pembayaran1.value);
+              var kembalianaja = 0.0;
+
+              kembalianaja = jumlahbayar - total;
+
+              document.formpembayaran.kembalian1.value = eval(kembalianaja);
+          }
+
+          function simpan() {
+              document.formpembayaran.namabaru.value = document.formpembayaran.nama1.value;
+              document.formpembayaran.jenisbaru.value = document.formpembayaran.jenis1.value;
+              document.formpembayaran.jumlahbaru.value = document.formpembayaran.jumlah1.value;
+              document.formpembayaran.totalbaru.value = document.formpembayaran.total1.value;
+              document.formpembayaran.bayarbaru.value = document.formpembayaran.pembayaran1.value;
+              document.formpembayaran.kembalianbaru.value = document.formpembayaran.kembalian1.value;
+          }
+
+              var nama = []
+              var jenis = []
+              var jumlah = []
+              var total = []
+              var dibayar = []
+              var tanggal = []
+
+              var tampil = document.getElementById('tampilan')
+
+          function showData() {
+          tampil.innerHTML = ""
+
+          for(i = 0;i<nama.length;i++){
+              var nodata = i+1
+
+
+
+
+
+          tampil.innerHTML += "<tr>"+
+            "<th>"+nodata+"</th>"+
+            "<td>"+nama[i]+"</td>"+
+            "<td>"+jenis[i]+"</td>"+
+            "<td>"+jumlah[i]+"</td>"+
+            "<td>"+total[i]+"</td>"+
+            "<td>"+dibayar[i]+"</td>"+
+            "<td>"+tanggal[i]+"</td>"+
+            "<td>"+
+              "<button class='btn btn-danger' href='#' onclick='hapus("+i+")' type='button'>Delete</button>"+
+            "</td>"+
+          "</tr>"
+            }
+          }
+          showData()
+
+          function add() {
+            var namabaru = document.getElementById('nama').value
+            var jenisbaru = document.getElementById('jenis').value
+            var jumlahbaru = document.getElementById('jumlah').value
+            var totalbaru = document.getElementById('total').value
+            var dibayarbaru = document.getElementById('dibayar').value
+            var tanggalbaru = document.getElementById('tanggal').value
+
+            nama.push(namabaru)
+            jenis.push(jenisbaru)
+            jumlah.push(jumlahbaru)
+            total.push(totalbaru)
+            dibayar.push(dibayarbaru)
+            tanggal.push(tanggalbaru)
+
+          showData()
+
+          }
+
+          function hapus(drop) {
+            var namahapus = nama.splice(drop,1);
+            var jenishapus = jenis.splice(drop,1);
+            var jumlahhapus = jumlah.splice(drop,1);
+            var totalhapus = total.splice(drop,1);
+            var dibayarhapus = dibayar.splice(drop,1);
+            var tanggalhapus = tanggal.splice(drop,1);
+
+          showData()
+
+          }
+        </script>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

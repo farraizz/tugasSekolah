@@ -1,0 +1,9 @@
+.jumbotron
+{
+    height: 400px;
+    background-image: url(https://s3.bukalapak.com/uploads/content_attachment/3863d0ca90e4a5a1337b68b5/original/shutterstock_254919715.jpg);
+    background-position-y: -50px;
+    background-size: cover;
+    color: white;
+}
+
